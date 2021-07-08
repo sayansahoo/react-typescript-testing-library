@@ -10,7 +10,7 @@ const containerStyle = css`
 
 const LayoutContainer = (): JSX.Element => {
   return (
-    <div className={containerStyle}>
+    <div data-testid="layout" className={containerStyle}>
       {routes}
     </div>
   );

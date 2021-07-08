@@ -10,11 +10,11 @@ const About: React.FC<RouteComponentProps> = (): JSX.Element => {
   const counter = useSelector((state: ReduxState) => state.sample.counter);
 
   return (
-    <section>
+    <section data-testid="about">
       <>
         <h1>About Page</h1>
-        <button onClick={() => dispatch(incrementOne)}>Increment</button>
-        <p>Current Count: {counter}</p>
+        <button data-testid="btn" onClick={() => dispatch(incrementOne)}>Increment</button>
+        <p data-testid="counter">Current Count: {counter}</p>
       </>
     </section>
   );
